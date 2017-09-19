@@ -15,6 +15,7 @@ const server = http.createServer((req, res)=>{
       if(url.length > 2 || !myData){
         res.statusCode = 404;
         res.setHeader('Content-Type', 'text/plain');
+        res.end('Not Found');
       }
       res.end(myData);
     });
@@ -22,3 +23,6 @@ const server = http.createServer((req, res)=>{
 });
 
 server.listen(8000);
+
+
+module.exports = server;
