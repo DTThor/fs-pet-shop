@@ -6,7 +6,7 @@ if (process.argv.length === 2) {
   fs.readFile('./pets.json', 'utf8', (err, data) => {
     //need to parse the json file in order to use it.
     let myData = JSON.parse(data);
-    //logic to determine which task to preform, read or create.
+    //logic to determine which task to perform, read or create.
     if (process.argv[2] == 'read') {
       if (process.argv.length == 3) {
         console.log(myData);
