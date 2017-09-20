@@ -36,6 +36,17 @@ app.get('/pets/:id', function(req, res){
   })
 })
 
+// app.post('/pets', function(req, res){
+//   fs.writeFile(petsPath, req.body, 'utf8', function(err, petsJSON){
+//     if(err){
+//       console.error(err.stack);
+//       return res.sendStatus(500);
+//     }
+//     let name = req.body.name;
+//
+//   })
+// })
+
 app.use(function(req, res){
   res.sendStatus(404);
 });
