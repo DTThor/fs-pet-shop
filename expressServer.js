@@ -1,12 +1,12 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
-const petsPath = path.join(__dirname, 'pets.json')
+var fs = require('fs');
+var path = require('path');
+var petsPath = path.join(__dirname, 'pets.json')
 
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 8000;
+var express = require('express');
+var app = express();
+var port = process.env.PORT || 8000;
 
 app.disable('x-powered-by');
 
